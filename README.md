@@ -1,4 +1,4 @@
-中文说明：https://zhuanlan.zhihu.com/p/613738433
+涓枃璇存槑锛歨ttps://zhuanlan.zhihu.com/p/613738433
 
 Inspired by ArchWSL: https://github.com/yuk7/ArchWSL-FS/blob/main/Makefile
 
