@@ -25,3 +25,5 @@ wsl --shutdown
 
 sudo systemctl enable docker
 ```
+
+For Chinese users: https://github.com/wswind/ArchLinux-WSL2-Install-Scripts-CN
