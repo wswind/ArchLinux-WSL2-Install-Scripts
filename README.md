@@ -26,4 +26,14 @@ wsl --shutdown
 sudo systemctl enable docker
 ```
 
-For Chinese users: https://github.com/wswind/ArchLinux-WSL2-Install-Scripts-CN
+Fix wslg issue:
+https://github.com/yuk7/ArchWSL/issues/342
+https://github.com/microsoft/wslg/issues/43#issuecomment-826039096
+
+```
+echo \
+'# Type Path           Mode UID  GID  Age Argument
+L+     /tmp/.X11-unix -    -    -    -   /mnt/wslg/.X11-unix' | sudo tee /etc/tmpfiles.d/wslg.conf
+```
+
+For Chinese users: https://github.com/wswind/ArchLinux-WSL2-Install-Scripts/tree/cn
