@@ -4,6 +4,7 @@ set -e
 # locale
 sed -i \
 -e "s/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/" \
+-e "s/^#zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/" \
 /etc/locale.gen
 
 locale-gen
@@ -37,11 +38,13 @@ usermod -aG docker $username
 
 mkdir /etc/docker
 
+MIRROR=http://hub-mirror.c.163.com
 cat << EOF > /etc/docker/daemon.json
 {
   "log-driver": "json-file",
   "log-opts": {
     "max-size": "100m"
-  }
+  },
+  "registry-mirrors": ["$MIRROR"]
 }
 EOF

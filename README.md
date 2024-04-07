@@ -1,3 +1,5 @@
+中文说明：https://zhuanlan.zhihu.com/p/613738433
+
 Inspired by ArchWSL: https://github.com/yuk7/ArchWSL-FS/blob/main/Makefile
 
 Help scripts to install ArchLinux on WSL2 with docker preinstalled.
