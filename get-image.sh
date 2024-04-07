@@ -17,7 +17,6 @@ fi
 pushd /tmp/arch
 curl -# -O https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-x86_64.tar.gz
 bsdtar -xpf archlinux-bootstrap-x86_64.tar.gz
-
 bsdtar -cpf archlinux-bootstrap.tar -C root.x86_64 .
 popd
 
