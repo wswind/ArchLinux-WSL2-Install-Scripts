@@ -7,7 +7,7 @@ How to use:
 # run on wsl to get rootfs image
 # image downloaded to C:\arch-image\archlinux-bootstrap.tar
 # curl and bsdtar are needed
-sudo ./get-image.sh
+./get-image.sh
 
 # run on windows to import the image
 setup.cmd
@@ -31,9 +31,7 @@ https://github.com/yuk7/ArchWSL/issues/342
 https://github.com/microsoft/wslg/issues/43#issuecomment-826039096
 
 ```
-echo \
-'# Type Path           Mode UID  GID  Age Argument
-L+     /tmp/.X11-unix -    -    -    -   /mnt/wslg/.X11-unix' | sudo tee /etc/tmpfiles.d/wslg.conf
+echo 'L+     /tmp/.X11-unix -    -    -    -   /mnt/wslg/.X11-unix' | sudo tee /etc/tmpfiles.d/wslg.conf
 ```
 
 For Chinese users: https://github.com/wswind/ArchLinux-WSL2-Install-Scripts/tree/cn

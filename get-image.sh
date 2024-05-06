@@ -15,14 +15,14 @@ if [ ! -d "/tmp/arch" ]; then
 fi
 
 pushd /tmp/arch
-curl -# -O https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-x86_64.tar.gz
-bsdtar -xpf archlinux-bootstrap-x86_64.tar.gz
-bsdtar -cpf archlinux-bootstrap.tar -C root.x86_64 .
+curl -# -O https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-x86_64.tar.zst
+sudo bsdtar -xpf archlinux-bootstrap-x86_64.tar.gz
+sudo bsdtar -cpf archlinux-bootstrap.tar -C root.x86_64 .
 popd
 
 if [ ! -d "/mnt/c/arch-image" ]; then
     mkdir /mnt/c/arch-image
 fi
 
-mv /tmp/arch/archlinux-bootstrap.tar /mnt/c/arch-image
-rm -rf /tmp/arch
+sudo mv /tmp/arch/archlinux-bootstrap.tar /mnt/c/arch-image
+sudo rm -rf /tmp/arch
